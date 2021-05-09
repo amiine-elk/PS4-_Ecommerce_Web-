@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta name="author" content=" ">
+
+    <link rel="icon" href="">
+    <link rel="shortcut" href="">
+    <link rel="apple-touch-icon" href="">
+
+    <meta properrty="og:title" content="">
+    <meta properrty="og:description" content="">
+    <meta properrty="og:image" content="">
+    <meta properrty="og:image:width" content="">
+    <meta properrty="og:image:height" content="">
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <title> controller | landing page</title>
+</head>
+<body>
+    <div class="container">
+        <!-- this is the navbar // header 
+        ============================================================ -->
+        <div class="navbar">
+            <img src="img/logo.png"class="logo">
+            <nav> 
+                <ul id="menuList">
+                    <li>  <a href="#"> Game Controllers</a></li>
+                    <li>  <a href="#"> VR accessoires</a></li>
+                    <li>  <a href="#"> Media Remotes</a></li>
+                    <li>  <a href="#"> Others</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <!-- this is the main of the web site
+        =========================================================== -->
+        <div class="row">
+            <!-- Col-1 ================= -->
+            <div class="col-1">
+                <h2> Ps4 V2 <br> Dulashock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p> (Conpatible/ Generic ) </p>
+                <h4> 320 Dh</h4>
+                <button type="button"> Buy Now <img src="img/arrow.png" alt="button fleche"></button>
+            </div>
+
+            <!-- Col-2 ================= -->
+            <div class="col-2">
+                <img src="img/controller.png" alt="" class="controller">
+                <div class="color-box"> </div>
+                <div class="add-btn">
+                    <img src="img/add.png" a lt="">
+                    <p><small> Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- this is yhe social media links-->
+        <div class="social-links">
+            <img src="img/fb.png" alt="">
+            <img src="img/tw.png" alt="">
+            <img src="img/ig.png" alt="">
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var menulist = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    
+</body>
+</html>
